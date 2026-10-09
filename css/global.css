@@ -24,6 +24,32 @@
     font-size: 0.9rem;
 }
 
+.site-footer {
+    background-color: var(--color-primary, #324001);
+    color: var(--color-text-light, #ffffff);
+    padding: 24px 40px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-title {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.footer-text {
+    margin: 4px 0 0;
+}
+
+.footer-copyright {
+    margin: 0;
+}
+
 @media (max-width: 768px) {
     .site-header {
         flex-direction: column;
@@ -31,5 +57,14 @@
         gap: 16px;
 
         padding: 16px 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .site-footer {
+        padding: 20px;
     }
 }
