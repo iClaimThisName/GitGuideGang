@@ -36,17 +36,15 @@
     src: url(../fonts/BarlowCondensed-Regular.woff2);
 }
 
-/* Header */
-
 .site-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    padding: 20px 40px;
+    padding: var(--spacing-primary) var(--spacing-secondary);
 
-    background-color: var(--color-primary, #324001);
-    color: var(--color-text-light, #ffffff);
+    background-color: var(--color-primary);
+    color: var(--color-accent-cotton);
 }
 
 .header-text {
@@ -56,48 +54,60 @@
 
 .header-title {
     margin: 0;
+
+    font-family: var(--font-title);
     font-size: 1.6rem;
 }
 
 .header-tagline {
     margin: 4px 0 0;
+
+    font-family: var(--font-content);
     font-size: 0.9rem;
 }
 
-/* Footer */
-
 .site-footer {
-    background-color: var(--color-primary, #324001);
-    color: var(--color-text-light, #ffffff);
-    padding: 24px 40px;
+    padding: var(--spacing-primary) var(--spacing-secondary);
+
+    background-color: var(--color-primary);
+    color: var(--color-accent-cotton);
 }
 
 .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
+
+    gap: var(--spacing-primary);
 }
 
 .footer-title {
     margin: 0;
+
+    font-family: var(--font-title);
     font-size: 1.2rem;
 }
 
 .footer-text {
     margin: 4px 0 0;
+
+    font-family: var(--font-content);
 }
 
 .footer-copyright {
     margin: 0;
+
+    font-family: var(--font-content);
 }
 
 @media (max-width: 768px) {
+
     .site-header {
         flex-direction: column;
         align-items: flex-start;
-        gap: 16px;
-        padding: 16px 20px;
+
+        gap: var(--spacing-primary);
+        padding: var(--spacing-primary);
     }
 
     .footer-content {
@@ -106,6 +116,6 @@
     }
 
     .site-footer {
-        padding: 20px;
+        padding: var(--spacing-primary);
     }
 }
