@@ -5,4 +5,20 @@
     --accent-color-purple: #978FC0;
     --accent-color-cotton: #E4E6F2;
     --accent-color-sage: #BCBFA4;
+
+    --primary-spacing: 16px;
+    --secondary-spacing: 32px;
+    --border-radius: 12px;
+
+    --font-family-titles: 'daydream';
+    --font-family-content: 'BarlowCondensed-Regular';
 }
+
+@font-face {
+    font-family: 'daydream';
+    src: url(../fonts/daydream.otf);
+
+    font-family: 'BarlowCondensed-Regular';
+    src: url(../fonts/BarlowCondensed-Regular.ttf);
+}
+
