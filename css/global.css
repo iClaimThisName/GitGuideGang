@@ -1,0 +1,35 @@
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 40px;
+
+    background-color: var(--color-primary, #324001);
+    color: var(--color-text-light, #ffffff);
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-title {
+    margin: 0;
+    font-size: 1.6rem;
+}
+
+.header-tagline {
+    margin: 4px 0 0;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+
+        padding: 16px 20px;
+    }
+}
