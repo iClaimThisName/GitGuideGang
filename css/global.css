@@ -1,0 +1,37 @@
+:root {
+    --color-primary: #324001;
+    --color-secondary: #6B67B8;
+    --color-accent-green: #8EA24D;
+    --color-accent-purple: #978FC0;
+    --color-accent-cotton: #E4E6F2;
+    --color-accent-sage: #BCBFA4;
+
+    --spacing-primary: 16px;
+    --spacing-secondary: 32px;
+    --border-radius: 12px;
+
+    --font-title: 'daydream', Arial, sans-serif;
+    --font-content: 'BarlowCondensed-Regular', Arial, sans-serif;
+    --font-content-bold: 'BarlowCondensed-Bold', Arial, sans-serif;
+    --font-content-italic: 'BarlowCondensed-Italic', Arial, sans-serif;
+}
+
+@font-face {
+    font-family: 'daydream';
+    src: url(../fonts/daydream.woff2);
+}
+
+@font-face{
+    font-family: 'BarlowCondensed-Bold';
+    src: url(../fonts/BarlowCondensed-Bold.ttf);
+}
+
+@font-face{
+    font-family: 'BarlowCondensed-Italic';
+    src: url(../fonts/BarlowCondensed-Italic.ttf);
+}
+
+@font-face{
+    font-family: 'BarlowCondensed-Regular';
+    src: url(../fonts/BarlowCondensed-Regular.woff2);
+}
