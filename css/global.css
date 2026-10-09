@@ -1,0 +1,70 @@
+:root {
+  --color-test: #6b67b8;
+  --color-test2: #324001;
+}
+
+* {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+
+.bg {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: var(--color-test2);
+}
+
+.bg-gradient {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  opacity: 0.7;
+  background-image: radial-gradient(
+    ellipse at bottom,
+    var(--color-test) 40%,
+    var(--color-test2) 100%
+  );
+}
+
+.bg-grid {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 80%;
+  width: 40%;
+
+  opacity: 0.4;
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 19px,
+      var(--color-test) 19px,
+      var(--color-test) 20px,
+      transparent 20px,
+      transparent 39px,
+      var(--color-test) 39px,
+      var(--color-test) 40px
+    ),
+    repeating-linear-gradient(
+      120deg,
+      transparent,
+      transparent 19px,
+      var(--color-test) 19px,
+      var(--color-test) 20px,
+      transparent 20px,
+      transparent 39px,
+      var(--color-test) 39px,
+      var(--color-test) 40px
+    );
+  background-size: 40px 40px;
+  mask-image: radial-gradient(
+    ellipse at bottom right,
+    rgba(0, 0, 0, 1) 50%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+}
