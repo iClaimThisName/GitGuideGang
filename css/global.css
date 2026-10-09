@@ -3,21 +3,14 @@
   --color-test2: #324001;
 }
 
-* {
-  height: 100vh;
-  width: 100vw;
-  margin: 0;
-}
-
-.bg {
-  position: relative;
-  height: 100%;
-  width: 100%;
+body {
   background-color: var(--color-test2);
 }
 
 .bg-gradient {
-  position: relative;
+  position: absolute;
+  bottom: 0;
+  right: 0;
   height: 100%;
   width: 100%;
   opacity: 0.7;
