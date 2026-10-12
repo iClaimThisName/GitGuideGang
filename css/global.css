@@ -36,6 +36,16 @@
     src: url(../fonts/BarlowCondensed-Regular.woff2);
 }
 
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
 .site-header {
     display: flex;
     justify-content: space-between;
