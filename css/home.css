@@ -1,6 +1,6 @@
 .github-git-container {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column no-wrap;
     width: 75vw;
     height: fit-content;
     margin: 64px auto;
@@ -69,7 +69,7 @@
 }
 
 .version-control-header {
-    font-family: var(--font-content-bold);
+    font-family: var(--font-content-italic);
     color: var(--color-accent-purple);
     font-size: 2rem;
 }
