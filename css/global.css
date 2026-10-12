@@ -35,3 +35,14 @@
     font-family: 'BarlowCondensed-Regular';
     src: url(../fonts/BarlowCondensed-Regular.woff2);
 }
+
+body {
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.nav {
+    background-color: var(--color-primary);
+}
