@@ -1,0 +1,131 @@
+.about-page {
+    padding: var(--spacing-secondary);
+    background-color: var(--color-accent-cotton);
+}
+
+.about-intro {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.about-intro h1 {
+    margin: 0 0 8px;
+    font-family: var(--font-title);
+    color: var(--color-primary);
+}
+
+.about-intro p {
+    margin: 0 auto;
+    max-width: 700px;
+    font-family: var(--font-content);
+    color: var(--color-primary);
+    line-height: 1.5;
+}
+
+.team {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-secondary);
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+
+    padding: 32px;
+
+    background-color: var(--color-accent-sage);
+    border-radius: var(--border-radius);
+}
+
+.team-member:nth-child(even) {
+    flex-direction: row-reverse;
+    background-color: var(--color-accent-purple);
+}
+
+.member-image img {
+    width: 220px;
+    height: 220px;
+
+    object-fit: cover;
+    border-radius: var(--border-radius);
+
+    display: block;
+}
+
+.member-info {
+    flex: 1;
+}
+
+.member-info h2 {
+    margin: 0 0 8px;
+
+    font-family: var(--font-content-bold);
+    color: var(--color-primary);
+
+    font-size: 2rem;
+}
+
+.member-tagline {
+    margin: 0 0 12px;
+
+    font-family: var(--font-content-italic);
+    color: var(--color-secondary);
+
+    font-size: 1.2rem;
+}
+
+.member-info p {
+    margin: 0;
+
+    font-family: var(--font-content);
+    color: var(--color-primary);
+
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+
+    .about-page {
+        padding: var(--spacing-primary);
+    }
+
+    .about-intro {
+        margin-bottom: var(--spacing-secondary);
+    }
+
+    .team {
+        gap: var(--spacing-primary);
+    }
+
+    .team-member,
+    .team-member:nth-child(even) {
+        flex-direction: column;
+        text-align: center;
+
+        gap: var(--spacing-primary);
+        padding: var(--spacing-primary);
+    }
+
+    .member-image img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .member-info h2 {
+        font-size: 1.6rem;
+    }
+
+    .member-tagline {
+        font-size: 1.1rem;
+    }
+
+    .member-info p {
+        font-size: 1rem;
+    }
+}
