@@ -3,13 +3,235 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Git Commands | Git Guide Gang</title>
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/commands.css">
 </head>
 <body>
-    <main>
-
-    </main>    
+        <header class="site-header">
+        <div class="header-text">
+            <h1 class="header-title">Git Guide Gang</h1>
+            <p class="header-tagline">
+                Learn Git. Work together. Build better.
+            </p>
+        </div>
+        </header>
+        <main class="commands-page">
+            <section class="commands-intro">
+                <h1>Git Commands</h1>
+                <p>
+                    A beginner-friendly reference for commonly used Git commands.
+                </p>
+            </section>
+            <div class="terminal-container">
+                <section class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <h2>Getting Started</h2>
+                    </div>
+                    <div class="terminal-content">
+                        <div class="command-line">
+                            <code>$ git init</code>
+                            <p>Creates a new Git repository in the current folder.</p>
+                        </div>
+                        <div class="command-line">
+                            <code>$ git clone &lt;url&gt;</code>
+                            <p>Creates a local copy of an existing remote repository.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <h2>Prepare Changes</h2>
+                    </div>
+                    <div class="terminal-content">
+                        <div class="command-line">
+                            <code>$ git status</code>
+                            <p>Shows changed, staged and untracked files.</p>
+                        </div>
+                        <div class="command-line">
+                            <code>$ git add &lt;file&gt;</code>
+                            <p>Adds a specific file to the staging area.</p>
+                        </div>
+                        <div class="command-line">
+                            <code>$ git add .</code>
+                            <p>Adds all current changes to the staging area.</p>
+                        </div>
+                        <div class="command-line">
+                            <code>$ git diff</code>
+                            <p>Shows unstaged changes in the working directory.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <h2>Save Changes</h2>
+                    </div>
+                    <div class="terminal-content">
+                        <div class="command-line">
+                            <code>$ git commit</code>
+                            <p>Creates a commit and opens an editor for the commit message.</p>
+                        </div>
+                        <div class="command-line">
+                            <code>$ git commit -m "message"</code>
+                            <p>Saves staged changes with a commit message.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <h2>Branches</h2>
+                    </div>
+                    <div class="terminal-content">
+                        <div class="command-line">
+                            <code>$ git branch</code>
+                            <p>Lists the local branches in the repository.</p>
+                        </div>
+                        <div class="command-line">
+                            <code>$ git switch &lt;branch-name&gt;</code>
+                            <p>Switches to an existing branch.</p>
+                        </div>
+                        <div class="command-line">
+                            <code>$ git switch -c &lt;branch-name&gt;</code>
+                            <p>Creates a new branch and switches to it.</p>
+                        </div>
+                        <div class="command-line">
+                            <code>$ git branch -d &lt;branch-name&gt;</code>
+                            <p>Deletes a local branch that is no longer needed.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <h2>Merge Changes</h2>
+                    </div>
+                    <div class="terminal-content">
+                        <div class="command-line">
+                            <code>$ git merge &lt;branch-name&gt;</code>
+                            <p>
+                                Combines changes from another branch into the
+                                branch you are currently on.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <h2>Remote Repositories</h2>
+                    </div>
+                    <div class="terminal-content">
+                        <div class="command-line">
+                            <code>$ git remote add origin &lt;url&gt;</code>
+                            <p>Connects a local repository to a remote repository.</p>
+                        </div>
+                        <div class="command-line">
+                            <code>$ git fetch</code>
+                            <p>Downloads information from the remote without merging it</p>
+                        </div>
+                        <div class="command-line">
+                            <code>$ git pull</code>
+                            <p>Downloads remote changes and integrates them into the current branch.</p>
+                        </div>
+                        <div class="command-line">
+                            <code>$ git push</code>
+                            <p>Sends local commits to the connected remote branch.</p>
+                        </div>
+                        <div class="command-line">
+                            <code>$ git push -u origin &lt;branch-name&gt;</code>
+                            <p>
+                                Pushes a new branch to the remote and sets its
+                                tracking branch.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <h2>Undo &amp; Restore</h2>
+                    </div>
+                    <div class="terminal-content">
+                        <div class="command-line">
+                            <code>$ git restore &lt;file&gt;</code>
+                            <p>Discards unstaged changes made to a file.</p>
+                        </div>
+                         <div class="command-line">
+                            <code>$ git restore --staged &lt;file&gt;</code>
+                            <p>Removes a file from the staging area without deleting its changes.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <h2>History</h2>
+                    </div>
+                    <div class="terminal-content">
+                        <div class="command-line">
+                            <code>$ git log</code>
+                            <p>Shows the commit history of the repository.</p>
+                        </div>
+                        <div class="command-line">
+                            <code>$ git log --oneline</code>
+                            <p>Shows the commit history in a shorter one-line format.</p>
+                        </div>
+                        <div class="command-line">
+                            <code>$ git log --graph</code>
+                            <p>Displays the commit history as a branch and merge graph.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2 class="footer-title">Git Guide Gang</h2>
+                <p class="footer-text">
+                    A beginner-friendly guide to Git & GitHub.
+                </p>
+            </div>
+            <p class="footer-copyright">
+                &copy; 2026 Git Guide Gang
+            </p>
+        </div>
+    </footer> 
 </body>
 </html>
