@@ -1,6 +1,6 @@
 .commands-page {
     padding: var(--spacing-secondary);
-    background-color: var(--color-accent-cotton);
+    background-color: transparent;
 }
 
 .commands-intro {
@@ -11,13 +11,13 @@
 .commands-intro h1 {
     margin: 0 0 8px;
     font-family: var(--font-title);
-    color: var(--color-primary);
+    color: var(--color-accent-cotton);
 }
 
 .commands-intro p {
     margin: 0;
     font-family: var(--font-content);
-    color: var(--color-primary);
+    color: var(--color-accent-cotton);
 }
 
 .terminal-container {
