@@ -11,14 +11,14 @@
 .about-intro h1 {
     margin: 0 0 8px;
     font-family: var(--font-title);
-    color: var(--color-primary);
+    color: var(--color-accent-cotton);
 }
 
 .about-intro p {
     margin: 0 auto;
     max-width: 700px;
     font-family: var(--font-content);
-    color: var(--color-primary);
+    color: var(--color-accent-cotton);
     line-height: 1.5;
 }
 
