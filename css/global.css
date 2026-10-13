@@ -41,7 +41,9 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
 
+.background {
   background:
     radial-gradient(ellipse at center, var(--color-secondary), transparent),
     radial-gradient(
@@ -61,6 +63,7 @@ body {
 
   background-color: var(--color-primary);
   background-blend-mode: difference;
+  background-attachment: fixed;
 }
 
 main {
