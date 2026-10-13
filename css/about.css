@@ -25,7 +25,6 @@
 .team {
     max-width: 1100px;
     margin: 0 auto;
-
     display: flex;
     flex-direction: column;
     gap: var(--spacing-secondary);
@@ -35,9 +34,7 @@
     display: flex;
     align-items: center;
     gap: 48px;
-
     padding: 32px;
-
     background-color: var(--color-accent-sage);
     border-radius: var(--border-radius);
 }
@@ -50,10 +47,8 @@
 .member-image img {
     width: 220px;
     height: 220px;
-
     object-fit: cover;
     border-radius: var(--border-radius);
-
     display: block;
 }
 
@@ -63,28 +58,22 @@
 
 .member-info h2 {
     margin: 0 0 8px;
-
     font-family: var(--font-content-bold);
     color: var(--color-primary);
-
     font-size: 2rem;
 }
 
 .member-tagline {
     margin: 0 0 12px;
-
     font-family: var(--font-content-italic);
     color: var(--color-secondary);
-
     font-size: 1.2rem;
 }
 
 .member-info p {
     margin: 0;
-
     font-family: var(--font-content);
     color: var(--color-primary);
-
     font-size: 1.1rem;
     line-height: 1.5;
 }
