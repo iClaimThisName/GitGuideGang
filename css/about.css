@@ -1,6 +1,6 @@
 .about-page {
     padding: var(--spacing-secondary);
-    background-color: var(--color-accent-cotton);
+    background-color: transparent;
 }
 
 .about-intro {
