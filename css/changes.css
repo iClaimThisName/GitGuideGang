@@ -1,3 +1,8 @@
+main {
+  margin-top: var(--spacing-secondary);
+  margin-bottom: var(--spacing-secondary);
+}
+
 .changes-title {
   font-family: var(--font-title);
   font-size: 2rem;
@@ -23,7 +28,7 @@
   gap: 16px;
 
   width: 75vw;
-  height: fit-content;
+  min-height: fit-content;
   padding: 16px;
   margin: auto;
 }
@@ -32,11 +37,17 @@
   display: flex;
   flex-flow: column nowrap;
   flex: 1 1 45%;
-  min-width: 200px;
-  height: 100%;
+  min-width: 400px;
+  min-height: fit-content;
+  height: 50vh;
+
   border-radius: 24px;
   background-color: var(--color-accent-cotton);
   filter: drop-shadow(0px 2px 2px var(--color-accent-purple));
+
+  &.second-row {
+    height: 60vh;
+  }
 }
 
 .card-header {
@@ -89,4 +100,61 @@
 
 .checklist input:checked ~ .checkmark {
   background-color: var(--color-accent-purple);
+}
+
+button {
+  display: flex;
+  justify-self: center;
+  height: 10vh;
+  width: fit-content;
+  margin: auto;
+  font-family: var(--font-title);
+  font-size: 1rem;
+  color: var(--color-accent-purple);
+  padding: var(--spacing-secondary);
+  text-align: center;
+
+  border-radius: 24px;
+  background-color: var(--color-accent-cotton);
+  filter: drop-shadow(0px 2px 2px var(--color-accent-purple));
+
+  &:hover {
+    background-color: var(--color-accent-sage);
+  }
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    width: 90vw;
+  }
+
+  .card {
+    min-width: unset;
+    height: fit-content;
+
+    &.second-row {
+      height: fit-content;
+    }
+  }
+
+  .info {
+    margin-inline: var(--spacing-primary);
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+
+@media (max-height: 450px) {
+  .card {
+    height: fit-content;
+    aspect-ratio: unset;
+
+    &.second-row {
+      height: fit-content;
+    }
+  }
+
+  button {
+    height: fit-content;
+  }
 }
