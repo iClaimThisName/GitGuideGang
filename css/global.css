@@ -67,7 +67,7 @@ svg {
 
 .nav.active ~ .main {
     left: 250px;
-    width:calc(100% - 250px)
+    width: calc(100% - 250px);
 }
 
 nav ul {
@@ -116,7 +116,6 @@ nav ul {
     align-items: center;
     grid-area: header;
     padding: var(--spacing-primary) var(--spacing-secondary);
-
     background-color: var(--color-primary);
     color: var(--color-accent-cotton);
 }
