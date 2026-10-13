@@ -1,16 +1,18 @@
-.version-control-container {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  width: 100%;
-  padding: 64px 0px 64px 0px;
-  background-color: var(--color-accent-cotton);
+.changes-title {
+  font-family: var(--font-title);
+  font-size: 2rem;
+  text-align: center;
+  padding: var(--spacing-secondary);
+  padding-bottom: 0px;
+  color: var(--color-accent-cotton);
 }
 
-.version-control-header {
+.changes-text {
   font-family: var(--font-content);
-  color: var(--color-accent-purple);
-  font-size: 2rem;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: var(--spacing-primary);
+  color: var(--color-accent-cotton);
 }
 
 .card-container {
@@ -20,7 +22,7 @@
   align-items: center;
   gap: 16px;
 
-  width: 60vw;
+  width: 75vw;
   height: fit-content;
   padding: 16px;
   margin: auto;
@@ -29,30 +31,62 @@
 .card {
   display: flex;
   flex-flow: column nowrap;
-  flex: 1 1 30%;
+  flex: 1 1 45%;
   min-width: 200px;
-  aspect-ratio: 1/0.9;
+  height: 100%;
   border-radius: 24px;
-  background-color: white;
+  background-color: var(--color-accent-cotton);
   filter: drop-shadow(0px 2px 2px var(--color-accent-purple));
-  align-items: center;
-  justify-content: center;
-
-  &:hover {
-    background-color: var(--color-accent-cotton);
-  }
 }
 
 .card-header {
   font-family: var(--font-title);
   color: var(--color-secondary);
-  padding-top: var(--spacing-secondary);
+  padding: var(--spacing-secondary);
+  text-align: center;
 }
 
 .card-content {
   margin: var(--spacing-secondary);
-  margin-top: var(--spacing-primary);
+  margin-top: 0;
   font-family: var(--font-content);
-  font-size: calc(0.8vw + 0.4rem);
+  font-size: 1.5rem;
   color: var(--color-secondary);
+}
+
+.info {
+  margin-inline: 64px;
+  font-size: 1rem;
+  color: var(--color-accent-purple);
+}
+
+.checklist {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  padding-left: 48px;
+  padding-top: var(--spacing-primary);
+  user-select: none;
+}
+
+.checklist input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: var(--spacing-primary);
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border: 2px dashed var(--color-accent-purple);
+  border-radius: 6px;
+}
+
+.checklist input:checked ~ .checkmark {
+  background-color: var(--color-accent-purple);
 }
