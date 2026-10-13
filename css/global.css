@@ -46,11 +46,6 @@ body {
                    "footer footer"
 }
 
-.nav {
-    background-color: var(--color-primary);
-    grid-area: nav;
-}
-
 svg {
     color: var(--color-primary);
 }
@@ -63,8 +58,14 @@ svg {
     width: 70px;
     padding: 5px 1em;
     background-color: var(--color-primary);
-
+    font-family: var(--font-content);
+    grid-area: nav;
     overflow: hidden;
+    transition: 300ms ease-in-out;
+}
+
+.nav.show {
+    width: 150px;
 }
 
 nav ul {
@@ -74,7 +75,12 @@ nav ul {
 .list-logo {
     display: flex;
     justify-content: flex-end;
-    gap: 32px;
+    gap: 20px;
+}
+
+nav ul {
+    list-style: none;
+    gap: 16px;
 }
 
 .nav ul li.active a {
