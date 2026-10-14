@@ -2,13 +2,19 @@
     box-sizing: border-box;
 }
 
-
+.background {
+    background: radial-gradient(ellipse at center, var(--color-secondary), transparent), radial-gradient( ellipse at left, var(--color-accent-purple) 5%, transparent ), radial-gradient( ellipse at right, var(--color-accent-green) 50%, transparent ), repeating-radial-gradient( var(--color-accent-purple), var(--color-accent-green) 20% );
+    background-color: var(--color-primary);
+    background-blend-mode: difference;
+    background-attachment: fixed;
+}
 
 .container-branch {
     background-color: var(--color-accent-green);
+    color: var(--color-accent-cotton);
     padding: var(--spacing-primary);
     width: 60vw;
-    margin: auto;
+    margin: 32px auto 0;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -17,30 +23,38 @@
 
 .card-container {
     display: flex;
+    flex-direction: column;
     margin: var(--spacing-secondary);
     gap: var(--spacing-primary);
     padding: var(--spacing-primary);
     text-align: center;
 }
 
-.card {
-    background-color: var( --color-accent-cotton);
+.card-window {
+    background-color: var(--color-accent-purple);
     border-radius: var(--border-radius);
 }
 
-.card-title {
-    font-size: 0.85em;
-    font-family: var(--font-title);
+.card-header {
+    background-color: var(--color-accent-sage);
+    padding: var(--spacing-primary);
+    border-radius: var(--border-radius);
 }
 
 .branch-title {
     font-family: var( --font-title);
-    font-size: 0.75em;
+    font-size: 1.4em;
+}
+
+.card-title {
+    font-size: 1.2em;
+    font-family: var(--font-content-bold);
+    color: var(--color-accent-cotton);
 }
 
 .info-text {
     font-family: var(--font-content);
-    margin: 5px;
+    margin: 8px;
 }
 
 @media (min-width: 600px) {
