@@ -45,3 +45,9 @@ main {
     font-size: 1.1rem;
     text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+    ul ul {
+        padding-left: var(--spacing-primary);
+        }
+}
