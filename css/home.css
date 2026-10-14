@@ -1,165 +1,169 @@
 .github-git-container {
-  display: flex;
-  flex-flow: column no-wrap;
-  width: 75vw;
-  height: fit-content;
-  margin: 64px auto;
+    display: flex;
+    flex-flow: column no-wrap;
+    width: 75vw;
+    height: fit-content;
+    margin: 64px auto;
 
-  border-radius: 24px;
-  background-color: var(--color-accent-green);
+    border-radius: 24px;
+    background-color: var(--color-accent-green);
 
-  clip-path: polygon(
-    0% 0%,
-    0% 100%,
-    45% 100%,
-    50% 0,
-    55% 0,
-    50% 100%,
-    100% 100%,
-    100% 0%
-  );
+    clip-path: polygon(
+        0% 0%,
+        0% 100%,
+        45% 100%,
+        50% 0,
+        55% 0,
+        50% 100%,
+        100% 100%,
+        100% 0%
+    );
 }
 
 .info-container {
-  width: 50%;
-  height: 100%;
+    width: 50%;
+    height: 100%;
 }
 
 .info-header {
-  padding: var(--spacing-secondary);
-  padding-bottom: 0;
-  font-family: var(--font-title);
-  font-size: calc(1.5vw + 0.5rem);
-  color: var(--color-accent-cotton);
-
-  &.left {
-    text-align: start;
-  }
-
-  &.right {
-    text-align: end;
-  }
-}
-
-.info-text {
-  padding: var(--spacing-secondary);
-  padding-top: 0;
-  font-family: var(--font-content);
-  font-size: calc(1vw + 0.5rem);
-  color: var(--color-accent-cotton);
-
-  &.left {
-    padding-right: 48px;
-    text-align: start;
-  }
-
-  &.right {
-    padding-left: 48px;
-    text-align: end;
-  }
-}
-
-.version-control-container {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  width: 100%;
-  padding: 64px 0px 64px 0px;
-  background-color: var(--color-accent-cotton);
-}
-
-.version-control-header {
-  font-family: var(--font-content);
-  color: var(--color-accent-purple);
-  font-size: 2rem;
-}
-
-.card-container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 16px;
-
-  width: 60vw;
-  height: fit-content;
-  padding: 16px;
-  margin: auto;
-}
-
-.card {
-  display: flex;
-  flex-flow: column nowrap;
-  flex: 1 1 30%;
-  min-width: 200px;
-  aspect-ratio: 1/0.9;
-  border-radius: 24px;
-  background-color: white;
-  filter: drop-shadow(0px 2px 2px var(--color-accent-purple));
-  align-items: center;
-  justify-content: center;
-
-  &:hover {
-    background-color: var(--color-accent-cotton);
-  }
-}
-
-.card-header {
-  font-family: var(--font-title);
-  color: var(--color-secondary);
-  padding-top: var(--spacing-secondary);
-}
-
-.card-content {
-  margin: var(--spacing-secondary);
-  margin-top: var(--spacing-primary);
-  font-family: var(--font-content);
-  font-size: calc(0.8vw + 0.4rem);
-  color: var(--color-secondary);
-}
-
-.bold {
-  font-family: var(--font-content-bold);
-}
-
-.git-github-container {
-  width: 100vw;
-}
-
-@media only screen and (max-width: 768px) {
-  .github-git-container {
-    margin: var(--spacing-secondary) auto;
-  }
-
-  .info-header {
-    padding: var(--spacing-primary);
+    padding: var(--spacing-secondary);
     padding-bottom: 0;
-  }
-
-  .info-text {
-    padding: var(--spacing-primary);
-    padding-top: 0;
+    font-family: var(--font-title);
+    font-size: calc(1.5vw + 0.5rem);
+    color: var(--color-accent-cotton);
 
     &.left {
-      padding-right: var(--spacing-primary);
-      text-align: start;
+        text-align: start;
     }
 
     &.right {
-      padding-left: var(--spacing-primary);
-      text-align: end;
+        text-align: end;
     }
-  }
+}
 
-  .version-control-container {
-    padding: var(--spacing-secondary) 0px var(--spacing-secondary) 0px;
-  }
+.info-text {
+    padding: var(--spacing-secondary);
+    padding-top: 0;
+    font-family: var(--font-content);
+    font-size: calc(1vw + 0.5rem);
+    color: var(--color-accent-cotton);
 
-  .card-container {
-    width: 90vw;
-  }
+    &.left {
+        padding-right: 48px;
+        text-align: start;
+    }
 
-  .card {
-    min-width: 150px;
-  }
+    &.right {
+        padding-left: 48px;
+        text-align: end;
+    }
+}
+
+.version-control-container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 100%;
+    padding: 64px 0px 64px 0px;
+    background-color: var(--color-accent-cotton);
+}
+
+.version-control-header {
+    font-family: var(--font-content);
+    color: var(--color-accent-purple);
+    font-size: 2rem;
+}
+
+.card-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 16px;
+
+    width: 60vw;
+    height: fit-content;
+    padding: 16px;
+    margin: auto;
+}
+
+.card {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 1 30%;
+    min-width: 200px;
+    aspect-ratio: 1/0.9;
+    border-radius: 24px;
+    background-color: white;
+    filter: drop-shadow(0px 2px 2px var(--color-accent-purple));
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        background-color: var(--color-accent-cotton);
+    }
+}
+
+.card-header {
+    font-family: var(--font-title);
+    color: var(--color-secondary);
+    padding-top: var(--spacing-secondary);
+}
+
+.card-content {
+    margin: var(--spacing-secondary);
+    margin-top: var(--spacing-primary);
+    font-family: var(--font-content);
+    font-size: calc(0.8vw + 0.4rem);
+    color: var(--color-secondary);
+}
+
+.bold {
+    font-family: var(--font-content-bold);
+}
+
+.git-github-container {
+    width: 100vw;
+}
+
+@media only screen and (max-width: 768px) {
+    main {
+        width: fit-content;
+    }
+
+    .github-git-container {
+        margin: var(--spacing-secondary) auto;
+    }
+
+    .info-header {
+        padding: var(--spacing-primary);
+        padding-bottom: 0;
+    }
+
+    .info-text {
+        padding: var(--spacing-primary);
+        padding-top: 0;
+
+        &.left {
+            padding-right: var(--spacing-primary);
+            text-align: start;
+        }
+
+        &.right {
+            padding-left: var(--spacing-primary);
+            text-align: end;
+        }
+    }
+
+    .version-control-container {
+        padding: var(--spacing-secondary) 0px var(--spacing-secondary) 0px;
+    }
+
+    .card-container {
+        width: 90%;
+    }
+
+    .card {
+        min-width: 150px;
+    }
 }
