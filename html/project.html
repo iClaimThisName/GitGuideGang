@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/project.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-text">
+        <h1 class="header-title">Git Guide Gang</h1>
+        <p class="header-tagline">Learn Git. Work together. Build better.</p>
+        </div>
+    </header>
+
+    <main class="main">
+    <h2 class="content-title">Creating a project</h2>
+    <div class="introduction-text">
+        Making a repository and making changes together with 
+        other people can seem scary but this page is a 
+        step-by-step guide to creating and linking a local project 
+        to Git.
+    </div>
+    <div class="main-content">
+    <ul class="information-text">
+            <li> 
+                <div class="list-title">Create a local project</div>
+                <ul class="description"> 
+                <li>The first thing that need to be done is creating a
+                 local project and then typing in 
+                 <b>git init</b> in the terminal. This will 
+                 initiate a hidden directory in the project folder 
+                 called <b>.git</b> which enables communication with 
+                 Github. To see that the hidden project has been 
+                 created, type <b>ls -a</b> the command line.
+                 </li>
+                 </ul>
+            </li>
+         <li> 
+            <div class="list-title"> Create a repository </div> 
+          <ul class="description">
+            <li>After a local project has been created, navigate to 
+            the repositories tab on your github profile and press 
+            <b>"New"</b>. Choose a name for you repository and choose
+             the visibility. A public repository can be viewed by 
+             anyone, while a private repository allows the creator 
+             to choose specific people to collaborate with. 
+             When done, press <b> "Create repository"</b>.
+            </li>
+         </ul>
+         </li>
+         <li> 
+         <div class="list-title">Linking</div> 
+          <ul class="description">
+                On the next screen, navigate to <b>"...or push an existing 
+                from the command line".</b> There should be three lines
+                of code that we want to copy and paste one by one into 
+                the terminal in VS Code. 
+            <li><b>git remote add origin git@github.com:your-account/repo/.git</b></li>
+            <ul>This line connects your local project and the github together.</ul>
+            <li><b>git branch -m main</b></li>
+            <ul>This renames the default branch to "main". This is the most 
+                important branch in the project as it stores the stable and 
+                final code. The main branch can be renamed but it is not 
+                suggested to do so.</ul>   
+            <li><b>git push -u origin main</b></li>
+            <ul>This pushes the local code to the repository (origin).</ul>
+          </ul>
+         </li>
+         <li>
+         <div class="list-title"> Pull </div> 
+         <ul class="description">
+            <li><b> git pull</b></li>
+            <ul> Now your project is synchronized with your repository but there 
+            will be two copies of the code base, the local one on your 
+            computer and the one stored in the repository. When working on a 
+            team (and always just to get into the habit of it) you should always 
+            git pull to ensure that you have the latest version of the 
+            project locally. As soon as someone pushes to the repo then your 
+            local code is out of date and you need to pull the latest version.
+            </ul>
+        </ul>
+    </li>
+    </ul>
+    <div class="list-title">
+         <h2>Cloning an existing project</h2>
+    </div>
+         <ul class="information-text">
+            <li> 
+                <div class="list-title">Get the SSH Key</div>
+                <ul class="description"> 
+                    <li>In the main page (&lt;code&gt;) of your repository, 
+                        look for a button called "&lt;&gt; code" and click on 
+                        the SSH tab. Copy the snippet of code with this format
+                        "git@github.com:user/project-name.git". The owner of 
+                        the repository should do this and share the link with 
+                        their collaborating partners. Keep in mind that the 
+                        SSH connection only connects one computer, so when 
+                        working on multiple computers all computers need an 
+                        SSH connection. 
+                    </li>
+                </li>
+                </ul>
+                <ul class="description">
+                    <li>Copy the SSH key provided by the owner of the 
+                        repository. In the terminal, type in: <b>git clone 
+                        project-url.</b>
+                    <li>You can rename the cloned project by typing in the new
+                        name after the url.</li>
+                    </li>
+                </ul>
+            </li>
+    </div>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-content">
+        <div class="footer-brand">
+        <h2 class="footer-title">The Git Guide Gang</h2>
+        <p class="footer-text">A beginner friendly guide to Git and Github</p>
+        </div>
+         <p class="footer-copyright">&copy; 2026 Git Guide Gang</p>
+        </div>
+    </footer>
+</body>
+</html>
