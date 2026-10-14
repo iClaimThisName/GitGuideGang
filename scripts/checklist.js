@@ -4,4 +4,4 @@ function uncheckAll() {
     .forEach((el) => (el.checked = false));
 }
 
-document.querySelector("button").addEventListener("click", uncheckAll);
+document.querySelector(".uncheck-button").addEventListener("click", uncheckAll);

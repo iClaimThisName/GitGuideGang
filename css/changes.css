@@ -104,7 +104,7 @@ main {
   background-color: var(--color-accent-purple);
 }
 
-button {
+.uncheck-button {
   display: flex;
   justify-self: center;
   height: 10vh;
