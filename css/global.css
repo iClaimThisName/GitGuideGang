@@ -65,13 +65,13 @@ svg {
     top: 0;
     left: 0;
     height: 100%;
-    width: 70px;
+    width: 0vw;
     padding: 5px 1em;
     background-color: var(--color-primary);
     font-family: var(--font-content);
     grid-area: nav;
     overflow: hidden;
-    position: absolute;
+    z-index: 1;
     transition: 300ms ease-in-out;
 }
 
@@ -85,6 +85,10 @@ svg {
     justify-content: flex-end;
     gap: 20px;
     width: 1px;
+}
+
+button {
+    margin: 30px;
 }
 
 nav ul {
@@ -212,6 +216,10 @@ svg {
     padding: var(--spacing-primary);
   }
 
+  .nav {
+    position: absolute;
+  }
+
   .footer-content {
     flex-direction: column;
     align-items: flex-start;
@@ -221,3 +229,5 @@ svg {
     padding: var(--spacing-primary);
   }
 }
+
+
