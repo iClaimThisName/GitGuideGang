@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Git Guide Gang</title>
+    <link href="../css/global.css" rel="stylesheet" />
+    <link href="../css/changes.css" rel="stylesheet" />
+  </head>
+  <body class="background">
+    <header class="site-header">
+      <div class="header-text">
+        <h1 class="header-title">Git Guide Gang</h1>
+        <p class="header-tagline">Learn Git. Work together. Build better.</p>
+      </div>
+    </header>
+
+    <main>
+      <div class="changes-title">Changes</div>
+      <div class="changes-text">
+        Making changes and adding them to the main branch may seem intimidating,
+        <br />
+        so to help we've created this handy checklist that outlines all the
+        steps for success!
+      </div>
+
+      <div class="card-container">
+        <div class="card">
+          <div class="card-header">Adding changes to your branch</div>
+          <div class="card-content">
+            <label class="checklist"
+              >git add .
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <div class="info">
+              This stages all changes. You can swap out "." with a file name if
+              you want more control over which files you stage
+            </div>
+            <label class="checklist"
+              >git commit -m "message"
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <div class="info">
+              This makes a commit with all the files you staged. The message
+              should be short and describe the changes you've made.
+              <br />Commit often so if you need to do a roll-back, you don't
+              lose a lot of good code unrelated to the problem
+            </div>
+            <label class="checklist"
+              >git push
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <div class="info">
+              Pushes the changes to the remote repository so others can access
+              it too
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">Keep main branch up to date</div>
+          <div class="card-content">
+            <label class="checklist"
+              >git checkout main
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <div class="info">Change to the main branch</div>
+            <label class="checklist"
+              >git pull
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <div class="info">
+              Get changes that have been made to the main branch since the last
+              time you pulled. You should do this often to avoid large amounts
+              of merge conflicts when you push your changes to the main branch
+              later on
+            </div>
+          </div>
+        </div>
+        <div class="card second-row">
+          <div class="card-header">
+            Merge main into branch and resolve conflicts
+          </div>
+          <div class="card-content">
+            <label class="checklist"
+              >git checkout "branch-name"
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <div class="info">Change back to your branch</div>
+            <label class="checklist"
+              >git merge main
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <div class="info">
+              Adds the changes that have been made to main since last time
+            </div>
+            <label class="checklist"
+              >resolve any merge conflicts
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <div class="info">
+              In case there are any conflicts between the newest version of main
+              and the code on your branch, solve these before continuing
+            </div>
+            <label class="checklist"
+              >git push
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <div class="info">
+              Pushes the changes to the remote repository so others can access
+              it too
+            </div>
+          </div>
+        </div>
+        <div class="card second-row">
+          <div class="card-header">Add your changes to the main branch</div>
+          <div class="card-content">
+            <label class="checklist"
+              >create pull request on Github
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <div class="info">
+              This allows collaborators to review your changes before they get
+              added to the main branch. Never add unnaproved code to the main
+              branch
+            </div>
+            <label class="checklist"
+              >git checkout main
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <div class="info">Change to the main branch</div>
+            <label class="checklist"
+              >git merge "branch-name"
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <div class="info">
+              Merge the changes from your branch into the main branch. Only do
+              this to code that has been reviewed and approved
+            </div>
+            <label class="checklist"
+              >git push
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <div class="info">
+              Pushes the changes to the main branch in the remote repository so
+              others can access it too
+            </div>
+            <label class="checklist"
+              >pat yourself on the back!
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <button class="uncheck-button">uncheck all</button>
+      <script src="../scripts/checklist.js"></script>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h2 class="footer-title">Git Guide Gang</h2>
+          <p class="footer-text">A beginner-friendly guide to Git & GitHub.</p>
+        </div>
+        <p class="footer-copyright">&copy; 2026 Git Guide Gang</p>
+      </div>
+    </footer>
+  </body>
+</html>
