@@ -41,9 +41,15 @@ body {
     min-height: 100vh;
     display: grid;
     grid-template: auto 1fr auto / auto 1fr;
+    transition: grid-template 300ms ease-in-out;
     grid-template-areas: "header header"
                    "nav main"
                    "footer footer"
+}
+
+main {
+    flex: 1;
+    grid-area: main;
 }
 
 svg {
@@ -54,7 +60,7 @@ svg {
     box-sizing: border-box;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 100%;
     width: 70px;
     padding: 5px 1em;
     background-color: var(--color-primary);
@@ -66,6 +72,7 @@ svg {
 
 .nav.show {
     width: 150px;
+    grid-area: nav;
 }
 
 nav ul {
