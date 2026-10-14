@@ -1,6 +1,7 @@
 .commands-page {
     padding: var(--spacing-secondary);
     background-color: transparent;
+    overflow-x: hidden;
 }
 
 .commands-intro {
@@ -100,7 +101,6 @@
 }
 
 @media (max-width: 768px) {
-
     .commands-page {
         padding: var(--spacing-primary);
     }
