@@ -216,6 +216,10 @@ svg {
     padding: var(--spacing-primary);
   }
 
+  main {
+    margin-left: var(--spacing-secondary);
+  }
+
   .nav {
     position: absolute;
   }
