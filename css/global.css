@@ -1,39 +1,39 @@
 :root {
-    --color-primary: #324001;
-    --color-secondary: #6B67B8;
-    --color-accent-green: #8EA24D;
-    --color-accent-purple: #978FC0;
-    --color-accent-cotton: #E4E6F2;
-    --color-accent-sage: #BCBFA4;
+  --color-primary: #324001;
+  --color-secondary: #6b67b8;
+  --color-accent-green: #8ea24d;
+  --color-accent-purple: #978fc0;
+  --color-accent-cotton: #e4e6f2;
+  --color-accent-sage: #bcbfa4;
 
-    --spacing-primary: 16px;
-    --spacing-secondary: 32px;
-    --border-radius: 12px;
+  --spacing-primary: 16px;
+  --spacing-secondary: 32px;
+  --border-radius: 12px;
 
-    --font-title: 'daydream', Arial, sans-serif;
-    --font-content: 'BarlowCondensed-Regular', Arial, sans-serif;
-    --font-content-bold: 'BarlowCondensed-Bold', Arial, sans-serif;
-    --font-content-italic: 'BarlowCondensed-Italic', Arial, sans-serif;
+  --font-title: "daydream", Arial, sans-serif;
+  --font-content: "BarlowCondensed-Regular", Arial, sans-serif;
+  --font-content-bold: "BarlowCondensed-Bold", Arial, sans-serif;
+  --font-content-italic: "BarlowCondensed-Italic", Arial, sans-serif;
 }
 
 @font-face {
-    font-family: 'daydream';
-    src: url(../fonts/daydream.woff2);
+  font-family: "daydream";
+  src: url(../fonts/daydream.woff2);
 }
 
 @font-face {
-    font-family: 'BarlowCondensed-Bold';
-    src: url(../fonts/BarlowCondensed-Bold.ttf);
+  font-family: "BarlowCondensed-Bold";
+  src: url(../fonts/BarlowCondensed-Bold.ttf);
 }
 
 @font-face {
-    font-family: 'BarlowCondensed-Italic';
-    src: url(../fonts/BarlowCondensed-Italic.ttf);
+  font-family: "BarlowCondensed-Italic";
+  src: url(../fonts/BarlowCondensed-Italic.ttf);
 }
 
 @font-face {
-    font-family: 'BarlowCondensed-Regular';
-    src: url(../fonts/BarlowCondensed-Regular.woff2);
+  font-family: "BarlowCondensed-Regular";
+  src: url(../fonts/BarlowCondensed-Regular.woff2);
 }
 
 body {
@@ -75,10 +75,6 @@ svg {
     grid-area: nav;
 }
 
-nav ul {
-    list-style: none;
-}
-
 .list-logo {
     display: flex;
     justify-content: flex-end;
@@ -92,6 +88,7 @@ nav ul {
 
 .nav ul li.active a {
     color: var(--color-accent-cotton);
+
     svg {
         fill: var(--color-accent-cotton);
     }
@@ -107,11 +104,6 @@ nav ul {
     gap: 1em;
 }
 
-.main {
-    flex: 1;
-    grid-area: main;
-}
-
 .site-header {
     display: flex;
     justify-content: space-between;
@@ -122,23 +114,53 @@ nav ul {
     color: var(--color-accent-cotton);
 }
 
+.background {
+  background:
+    radial-gradient(ellipse at center, var(--color-secondary), transparent),
+    radial-gradient(
+      ellipse at left,
+      var(--color-accent-purple) 5%,
+      transparent
+    ),
+    radial-gradient(
+      ellipse at right,
+      var(--color-accent-green) 50%,
+      transparent
+    ),
+    repeating-radial-gradient(
+      var(--color-accent-purple),
+      var(--color-accent-green) 20%
+    );
+
+  background-color: var(--color-primary);
+  background-blend-mode: difference;
+  background-attachment: fixed;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-primary) var(--spacing-secondary);
+  background-color: var(--color-primary);
+  color: var(--color-accent-cotton);
+}
+
 .header-text {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .header-title {
-    margin: 0;
-
-    font-family: var(--font-title);
-    font-size: 1.6rem;
+  margin: 0;
+  font-family: var(--font-title);
+  font-size: 1.6rem;
 }
 
 .header-tagline {
-    margin: 4px 0 0;
-
-    font-family: var(--font-content);
-    font-size: 0.9rem;
+  margin: 4px 0 0;
+  font-family: var(--font-content);
+  font-size: 0.9rem;
 }
 
 .site-footer {
@@ -149,48 +171,42 @@ nav ul {
 }
 
 .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    gap: var(--spacing-primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--spacing-primary);
 }
 
 .footer-title {
-    margin: 0;
-
-    font-family: var(--font-title);
-    font-size: 1.2rem;
+  margin: 0;
+  font-family: var(--font-title);
+  font-size: 1.2rem;
 }
 
 .footer-text {
-    margin: 4px 0 0;
-
-    font-family: var(--font-content);
+  margin: 4px 0 0;
+  font-family: var(--font-content);
 }
 
 .footer-copyright {
-    margin: 0;
-
-    font-family: var(--font-content);
+  margin: 0;
+  font-family: var(--font-content);
 }
 
 @media (max-width: 768px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-primary);
+    padding: var(--spacing-primary);
+  }
 
-    .site-header {
-        flex-direction: column;
-        align-items: flex-start;
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-        gap: var(--spacing-primary);
-        padding: var(--spacing-primary);
-    }
-
-    .footer-content {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .site-footer {
-        padding: var(--spacing-primary);
-    }
+  .site-footer {
+    padding: var(--spacing-primary);
+  }
 }
