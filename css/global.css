@@ -56,6 +56,10 @@ svg {
     color: var(--color-primary);
 }
 
+.nav-container {
+    position: relative;
+}
+
 .nav {
     box-sizing: border-box;
     top: 0;
@@ -67,6 +71,7 @@ svg {
     font-family: var(--font-content);
     grid-area: nav;
     overflow: hidden;
+    position: absolute;
     transition: 300ms ease-in-out;
 }
 
@@ -79,11 +84,17 @@ svg {
     display: flex;
     justify-content: flex-end;
     gap: 20px;
+    width: 1px;
 }
 
 nav ul {
     list-style: none;
     gap: 16px;
+}
+
+svg {
+    height: 10px;
+    width: 10px;
 }
 
 .nav ul li.active a {
