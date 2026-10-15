@@ -2,13 +2,12 @@
     box-sizing: border-box;
 }
 
-
-
 .container-branch {
     background-color: var(--color-accent-green);
-    padding: var(--spacing-primary);
-    width: 60vw;
-    margin: auto;
+    color: var(--color-accent-cotton);
+    padding: 16px;
+    width: 80vw;
+    margin: 32px auto 0;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -17,39 +16,71 @@
 
 .card-container {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     margin: var(--spacing-secondary);
     gap: var(--spacing-primary);
     padding: var(--spacing-primary);
-    text-align: center;
 }
 
-.card {
-    background-color: var( --color-accent-cotton);
+.card-window {
+    background-color: var(--color-accent-purple);
     border-radius: var(--border-radius);
 }
 
-.card-title {
-    font-size: 0.85em;
-    font-family: var(--font-title);
+.card-header {
+    background-color: var(--color-accent-green);
+    padding: var(--spacing-primary);
+    border-radius: var(--border-radius);
+    text-align: center;
+}
+
+.card-line {
+    display: block;
+    padding: 7px;
+    font-family: var(--font-content-bold);
+}
+
+.card-guide {
+    color: var(--color-accent-cotton);
 }
 
 .branch-title {
     font-family: var( --font-title);
-    font-size: 0.75em;
+    font-size: 1.4em;
+}
+
+.card-title {
+    font-size: 1.2em;
+    font-family: var(--font-content-bold);
+    color: var(--color-accent-cotton);
 }
 
 .info-text {
     font-family: var(--font-content);
-    margin: 5px;
+    margin: 8px;
 }
 
 @media (min-width: 600px) {
-    .container-branch {
-        width: auto;
+
+    .card-container {
+        flex-direction: row;
+    }
+
+    .card-window {
+        flex: 1 1 320px;
+    }
+
+    .card-title {
+        font-size: 1.4em;
+    }
+
+    .card-guide {
+        font-size: 16px;
     }
 
     .branch-title {
-        padding: 50px;
+        padding: 5px;
         font-size: 2em;
     }
 
