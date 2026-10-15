@@ -13,7 +13,7 @@
     background-color: var(--color-accent-green);
     color: var(--color-accent-cotton);
     padding: var(--spacing-primary);
-    width: 60vw;
+    width: 80vw;
     margin: 32px auto 0;
     display: flex;
     flex-direction: column;
@@ -24,10 +24,10 @@
 .card-container {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     margin: var(--spacing-secondary);
     gap: var(--spacing-primary);
     padding: var(--spacing-primary);
-    text-align: center;
 }
 
 .card-window {
@@ -39,6 +39,17 @@
     background-color: var(--color-accent-sage);
     padding: var(--spacing-primary);
     border-radius: var(--border-radius);
+    text-align: center;
+}
+
+.card-line {
+    display: block;
+    padding: 7px;
+    font-family: var(--font-content-bold);
+}
+
+.card-guide {
+    color: var(--color-accent-cotton);
 }
 
 .branch-title {
@@ -59,7 +70,19 @@
 
 @media (min-width: 600px) {
     .container-branch {
-        width: auto;
+        width: 80vw;
+    }
+
+    .card-container {
+        flex-direction: row;
+    }
+
+    .card-window {
+        flex: 1 1 320px;
+    }
+
+    .card-guide {
+        font-size: 16px;
     }
 
     .branch-title {

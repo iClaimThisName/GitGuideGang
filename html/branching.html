@@ -29,6 +29,11 @@
                     <span>Home</span>
                 </a>
             </li>
+            <li>
+                <a href="./project.html">
+                    <span>Project</span>
+                </a>
+            </li>
             <li class="active">
                 <a href="./branching.html">
                     <span>Branching</span>
@@ -45,13 +50,8 @@
                 </a>
             </li>
             <li>
-                <a href="./project.html">
-                    <span>Project</span>
-                </a>
-            </li>
-            <li>
                 <a href="./about.html">
-                    <span>About</span>
+                    <span>About us</span>
                 </a>
             </li>
         </ul>
@@ -62,8 +62,8 @@
             <h2 class="branch-title">Branches</h2>
             <p class="info-text">Branches are a necessary part of Github.
                 It's what makes us have the ability to freely code without
-                without risking any potential mess. This is done by creating a personal
-                branch that we can then merge with main when everything looks clean.
+                without risking any potential mess. This page will show you how to create
+                branches and how to close(delete) them.
             </p>
         </div>
         <div class="card-container">
@@ -72,25 +72,49 @@
                     <h2 class="card-title">Creating a branch</h2>
                 </div>
                 <div class="card-content">
-                    <p class="info-text">To create a branch we start by typing the
-                        command <code>$ git branch &lt;branch-name&gt;</code>. 
-                        However this will only create the branch. In order to 
-                        switch to the branch we just created we use the command
-                        <code>$ git checkout -b &lt;branch-name&gt;</code>.
-                        After that make sure that you're on the right branch
-                        which you can do by typing <code>$ git status</code>. 
-                        Alternatively you can use the command <code>$ git checkout -b &lt;branch-name&gt;</code>
-                        which will create the branch and also switch to it immediately.
-                    </p>
+                    <div class="card-line">
+                        <p class="card-guide"><code>$ git branch &lt;branch-name&gt;</code></p>
+                        <p class="info-text">This command creates a local branch. Commonly used
+                            for when you want to create a new branch, but still keep working on the current
+                            branch you're on.
+                        </p>
+                    </div>
+                    <div class="card-line">
+                        <p class="card-guide"><code>$ git checkout -b &lt;branch-name&gt;</code></p>
+                        <p class="info-text">This command will create and switch to the newly added branch.
+                            Used commonly for when you want to immediately work on a new branch. Before using this
+                            command remember to add and commit your changes, so that you don't lose any unsaved changes.
+                        </p>
+                    </div>
+                    <div class="card-line">
+                        <p class="card-guide"><code>$ git push -u origin &lt;branch-name&gt;</code></p>
+                        <p class="info-text">This command will push a local branch to Github.
+                            This will make the local branch into a remote branch on your repository,
+                            which we can then use to make changes freely without conflicting with any
+                            of the other branches.
+                        </p>
+                    </div>
                 </div>
             </section>
              <section class="card-window">
                 <div class="card-header">
-                    <h2 class="card-title">Hello world</h2>
+                    <h2 class="card-title">Closing a branch</h2>
                 </div>
                 <div class="card-content">
-                    <p class="info-text">Lorem ipsum dolor sit amet consectetur 
-                    adipisicing elit. Iure</p>
+                    <div class="card-line">
+                        <p class="card-guide"><code>$ git branch -d &lt;branch-name&gt;</code></p>
+                        <p class="info-text">
+                            This command will delete the selected branch you have chosen, but only if 
+                            if you have merged it first. Otherwise it will show a error.
+                        </p>
+                    </div>
+                    <div class="card-line">
+                        <p class="card-guide"><code>$ git branch -D &lt;branch-name&gt;</code></p>
+                        <p class="info-text">This command will forcefully delete the selected branch
+                            regardless if it's merged or not. Please be 100% sure that you're deleting
+                            the right branch as any unsaved changes will be removed.
+                        </p>
+                    </div>
                 </div>
             </section>
         </div>
@@ -99,7 +123,7 @@
         <div class="footer-content">
             <div class="footer-brand">
                 <h2 class="footer-title">Git Guide Gang</h2>
-                <p class="footer-text">A beginner-friendly</p>
+                <p class="footer-text">A beginner-friendly guide to Git and Github</p>
             </div>
             <p class="footer-copyright">&copy; 2026 Git Guide Gang</p>
         </div>

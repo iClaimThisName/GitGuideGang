@@ -117,6 +117,7 @@ svg {
     display: flex;
     align-items: center;
     gap: 1em;
+    transition: 200ms;
 }
 
 .site-header {
