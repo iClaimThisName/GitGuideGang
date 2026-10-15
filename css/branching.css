@@ -2,13 +2,6 @@
     box-sizing: border-box;
 }
 
-.background {
-    background: radial-gradient(ellipse at center, var(--color-secondary), transparent), radial-gradient( ellipse at left, var(--color-accent-purple) 5%, transparent ), radial-gradient( ellipse at right, var(--color-accent-green) 50%, transparent ), repeating-radial-gradient( var(--color-accent-purple), var(--color-accent-green) 20% );
-    background-color: var(--color-primary);
-    background-blend-mode: difference;
-    background-attachment: fixed;
-}
-
 .container-branch {
     background-color: var(--color-accent-green);
     color: var(--color-accent-cotton);
