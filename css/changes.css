@@ -1,162 +1,163 @@
 main {
-  margin-top: var(--spacing-secondary);
-  margin-bottom: var(--spacing-secondary);
+    margin-top: var(--spacing-secondary);
+    margin-bottom: var(--spacing-secondary);
 }
 
 .changes-title {
-  font-family: var(--font-title);
-  font-size: 2rem;
-  text-align: center;
-  padding: var(--spacing-secondary);
-  padding-bottom: 0px;
-  color: var(--color-accent-cotton);
+    font-family: var(--font-title);
+    font-size: 2rem;
+    text-align: center;
+    padding: var(--spacing-secondary);
+    padding-bottom: 0px;
+    color: var(--color-accent-cotton);
 }
 
 .changes-text {
-  font-family: var(--font-content);
-  font-size: 1.2rem;
-  text-align: center;
-  padding: var(--spacing-primary);
-  color: var(--color-accent-cotton);
+    font-family: var(--font-content);
+    font-size: 1.2rem;
+    text-align: center;
+    padding: var(--spacing-primary);
+    color: var(--color-accent-cotton);
 }
 
 .card-container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 16px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 16px;
 
-  width: 75vw;
-  min-height: fit-content;
-  padding: 16px;
-  margin: auto;
+    width: 75vw;
+    min-height: fit-content;
+    padding: 16px;
+    margin: auto;
 }
 
 .card {
-  display: flex;
-  flex-flow: column nowrap;
-  flex: 1 1 45%;
-  min-width: 400px;
-  min-height: fit-content;
-  height: 50vh;
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 1 45%;
+    min-width: 400px;
+    min-height: fit-content;
+    height: 50vh;
 
-  overflow-y: auto;
+    overflow-y: auto;
 
-  border-radius: 24px;
-  background-color: var(--color-accent-cotton);
-  filter: drop-shadow(0px 2px 2px var(--color-accent-purple));
+    border-radius: 24px;
+    background-color: var(--color-accent-cotton);
+    filter: drop-shadow(0px 2px 2px var(--color-accent-purple));
 
-  &.second-row {
-    height: 60vh;
-  }
+    &.second-row {
+        height: 60vh;
+    }
 }
 
 .card-header {
-  font-family: var(--font-title);
-  color: var(--color-secondary);
-  padding: var(--spacing-secondary);
-  text-align: center;
+    font-family: var(--font-title);
+    color: var(--color-secondary);
+    padding: var(--spacing-secondary);
+    text-align: center;
 }
 
 .card-content {
-  margin: var(--spacing-secondary);
-  margin-top: 0;
-  font-family: var(--font-content);
-  font-size: 1.5rem;
-  color: var(--color-secondary);
+    margin: var(--spacing-secondary);
+    margin-top: 0;
+    font-family: var(--font-content);
+    font-size: 1.5rem;
+    color: var(--color-secondary);
 }
 
 .info {
-  margin-inline: 64px;
-  font-size: 1rem;
-  color: var(--color-accent-purple);
+    margin-inline: 64px;
+    font-size: 1rem;
+    color: var(--color-accent-purple);
 }
 
 .checklist {
-  display: block;
-  position: relative;
-  cursor: pointer;
-  padding-left: 48px;
-  padding-top: var(--spacing-primary);
-  user-select: none;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    padding-left: 48px;
+    padding-top: var(--spacing-primary);
+    user-select: none;
 }
 
 .checklist input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
 }
 
 .checkmark {
-  position: absolute;
-  top: var(--spacing-primary);
-  left: 0;
-  height: 25px;
-  width: 25px;
-  border: 2px dashed var(--color-accent-purple);
-  border-radius: 6px;
+    position: absolute;
+    top: var(--spacing-primary);
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border: 2px dashed var(--color-accent-purple);
+    border-radius: 6px;
 }
 
 .checklist input:checked ~ .checkmark {
-  background-color: var(--color-accent-purple);
+    background-color: var(--color-accent-purple);
 }
 
 .uncheck-button {
-  display: flex;
-  justify-self: center;
-  height: 10vh;
-  width: fit-content;
-  margin: auto;
-  font-family: var(--font-title);
-  font-size: 1rem;
-  color: var(--color-accent-purple);
-  padding: var(--spacing-secondary);
-  text-align: center;
+    display: flex;
+    justify-self: center;
+    height: 10vh;
+    width: fit-content;
+    margin: auto;
+    font-family: var(--font-title);
+    font-size: 1rem;
+    color: var(--color-accent-purple);
+    padding: var(--spacing-secondary);
+    text-align: center;
 
-  border-radius: 24px;
-  background-color: var(--color-accent-cotton);
-  filter: drop-shadow(0px 2px 2px var(--color-accent-purple));
+    border-radius: 24px;
+    background-color: var(--color-accent-cotton);
+    filter: drop-shadow(0px 2px 2px var(--color-accent-purple));
 
-  &:hover {
-    background-color: var(--color-accent-sage);
-  }
+    &:hover {
+        background-color: var(--color-accent-sage);
+    }
 }
 
 @media (max-width: 500px) {
-  .card-container {
-    width: 90vw;
-  }
-
-  .card {
-    width: 100%;
-    height: fit-content;
-
-    &.second-row {
-      height: fit-content;
+    .card-container {
+        width: 80%;
     }
-  }
 
-  .info {
-    margin-inline: var(--spacing-primary);
-    padding-top: 8px;
-    padding-bottom: 8px;
-  }
+    .card {
+        min-width: 300px;
+        width: 100%;
+        height: fit-content;
+
+        &.second-row {
+            height: fit-content;
+        }
+    }
+
+    .info {
+        margin-inline: var(--spacing-primary);
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
 }
 
 @media (max-height: 450px) {
-  .card {
-    height: fit-content;
-    aspect-ratio: unset;
+    .card {
+        height: fit-content;
+        aspect-ratio: unset;
 
-    &.second-row {
-      height: fit-content;
+        &.second-row {
+            height: fit-content;
+        }
     }
-  }
 
-  button {
-    height: fit-content;
-  }
+    button {
+        height: fit-content;
+    }
 }
